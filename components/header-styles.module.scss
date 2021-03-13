@@ -1,0 +1,39 @@
+@import "../styles/variables.scss";
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: $yellow-color;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px 0;
+    width: 100%;
+  }
+
+  &__logo {
+    background-image: url(https://http2.mlstatic.com/frontend-assets/ui-navigation/5.14.2/mercadolibre/logo__small.png);
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 32px;
+  }
+}
+
+@media (min-width: $breakpoint-mobile) {
+  .header {
+    &__content {
+      width: 70%;
+    }
+
+    &__logo {
+      display: block;
+      background-image: url(https://http2.mlstatic.com/frontend-assets/ui-navigation/5.14.2/mercadolibre/logo__large_plus.png);
+      height: 34px;
+      margin: 11px;
+      width: 134px;
+    }
+  }
+}
