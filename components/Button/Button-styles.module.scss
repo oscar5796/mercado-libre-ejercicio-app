@@ -1,0 +1,10 @@
+@import "../../styles/variables.scss";
+
+.button {
+  background-color: $blue-ligth-color;
+  font-weight: 600;
+  font-size: 16px;
+  height: 48px;
+  color: $background-color-white;
+  margin-top: 30px;
+}

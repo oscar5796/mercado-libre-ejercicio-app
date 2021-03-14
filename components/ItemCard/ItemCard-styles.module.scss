@@ -1,0 +1,63 @@
+@import "../../styles/variables.scss";
+.item {
+  &__container {
+    display: flex;
+    padding: 20px 50px 20px 0;
+    color: #333;
+  }
+
+  &__image {
+    margin: 20px;
+    width: 160px;
+
+    img {
+      width: 160px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+
+  &__price {
+    font-size: 24px;
+    font-weight: 400
+  }
+
+  &__city {
+    width: 30%;
+    margin-left: 30px;
+    font-size: 15px;
+  }
+
+  &__shipping {
+    margin-left: 12px;
+
+    i {
+      border-radius: 50%;
+      background-color: #2aeb2feb;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 20px;
+      vertical-align: middle;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-mobile) {
+  .item {
+    &__info {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+    }
+
+    &__city {
+      width: 20%;
+    }
+  }
+}

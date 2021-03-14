@@ -1,0 +1,64 @@
+@import '../../styles/variables.scss';
+
+.container {
+  background-color: $background-color-white;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.image {
+  &__container {
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    width: 100%;
+  }
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: 0 30px;
+  text-overflow: ellipsis;
+  overflow: hidden
+}
+
+.description {
+  font-size: 14px;
+}
+
+.purchase {
+  &__information {
+    width: 50%;
+    margin: 30px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__detail {
+    color: $ligther-gray;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__price {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: $breakpoint-mobile) {
+  .container {
+    justify-content: space-between;
+  }
+
+  .purchase {
+    &__information {
+      width: 30%;
+    }
+  }
+}

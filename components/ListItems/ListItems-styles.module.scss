@@ -1,0 +1,11 @@
+@import "../../styles/variables.scss";
+
+.item {
+  background-color: $background-color-white;
+  border-bottom: thin solid $light-gray;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
